@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Lightbulb, Settings } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import banner1 from "@/assets/banner-1.jpg";
+import banner2 from "@/assets/banner-2.jpg";
+import banner3 from "@/assets/banner-3.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -9,50 +14,107 @@ const Hero = () => {
     }
   };
 
+  const banners = [
+    {
+      image: banner1,
+      title: "Instalaciones Eléctricas Profesionales",
+      subtitle: "Sistemas eléctricos de alta calidad para sectores residencial, comercial e industrial"
+    },
+    {
+      image: banner2,
+      title: "Automatización y Control",
+      subtitle: "Soluciones tecnológicas para optimizar procesos eléctricos e industriales"
+    },
+    {
+      image: banner3,
+      title: "Eficiencia Energética",
+      subtitle: "Climatización, monitoreo y control inteligente para reducir costos"
+    }
+  ];
+
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-background via-background to-primary/5">
-      <div className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          <div className="flex items-center justify-center gap-4 flex-wrap text-3xl md:text-5xl font-bold text-foreground">
-            <span className="flex items-center gap-2">
-              <Zap className="h-8 w-8 md:h-12 md:w-12 text-primary" />
-              Solución
-            </span>
-            <span className="text-primary">|</span>
-            <span className="flex items-center gap-2">
-              <Lightbulb className="h-8 w-8 md:h-12 md:w-12 text-accent" />
-              Innovación
-            </span>
-            <span className="text-primary">|</span>
-            <span className="flex items-center gap-2">
-              <Settings className="h-8 w-8 md:h-12 md:w-12 text-secondary" />
-              Automatización
-            </span>
-          </div>
+    <section id="inicio" className="relative min-h-screen pt-16">
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
+        className="w-full min-h-screen"
+      >
+        <CarouselContent>
+          {banners.map((banner, index) => (
+            <CarouselItem key={index}>
+              <div className="relative min-h-screen flex items-center justify-center">
+                {/* Background Image */}
+                <div 
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${banner.image})` }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+                </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Somos una empresa especializada en ofrecer soluciones integrales en mantenimiento, con personal técnico calificado en instalación y automatización de sistemas eléctricos, electrónicos y de climatización. Atendemos los sectores residencial, comercial e industrial, brindando servicios técnicos con altos estándares de calidad, seguridad y eficiencia energética.
-          </p>
+                {/* Content */}
+                <div className="container mx-auto px-4 py-20 relative z-10">
+                  <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+                    <div className="flex items-center justify-center gap-4 flex-wrap text-3xl md:text-5xl font-bold text-foreground">
+                      <span className="flex items-center gap-2">
+                        <Zap className="h-8 w-8 md:h-12 md:w-12 text-primary" />
+                        Solución
+                      </span>
+                      <span className="text-primary">|</span>
+                      <span className="flex items-center gap-2">
+                        <Lightbulb className="h-8 w-8 md:h-12 md:w-12 text-accent" />
+                        Innovación
+                      </span>
+                      <span className="text-primary">|</span>
+                      <span className="flex items-center gap-2">
+                        <Settings className="h-8 w-8 md:h-12 md:w-12 text-secondary" />
+                        Automatización
+                      </span>
+                    </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-secondary text-white transition-all hover:scale-105"
-              onClick={() => scrollToSection("servicios")}
-            >
-              Conoce nuestros servicios
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-primary text-primary hover:bg-primary hover:text-white transition-all hover:scale-105"
-              onClick={() => scrollToSection("contacto")}
-            >
-              Contáctanos
-            </Button>
-          </div>
-        </div>
-      </div>
+                    <div className="space-y-4">
+                      <h2 className="text-2xl md:text-4xl font-bold text-foreground">
+                        {banner.title}
+                      </h2>
+                      <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                        {banner.subtitle}
+                      </p>
+                    </div>
+
+                    <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                      Somos una empresa especializada en ofrecer soluciones integrales en mantenimiento, con personal técnico calificado en instalación y automatización de sistemas eléctricos, electrónicos y de climatización. Atendemos los sectores residencial, comercial e industrial, brindando servicios técnicos con altos estándares de calidad, seguridad y eficiencia energética.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button 
+                        size="lg" 
+                        className="bg-primary hover:bg-secondary text-white transition-all hover:scale-105"
+                        onClick={() => scrollToSection("servicios")}
+                      >
+                        Conoce nuestros servicios
+                      </Button>
+                      <Button 
+                        size="lg" 
+                        variant="outline" 
+                        className="border-primary text-primary hover:bg-primary hover:text-white transition-all hover:scale-105"
+                        onClick={() => scrollToSection("contacto")}
+                      >
+                        Contáctanos
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 };
