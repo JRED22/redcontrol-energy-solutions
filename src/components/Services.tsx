@@ -1,11 +1,13 @@
 import { Zap, Wind, Gauge, Cog, Droplets, Wrench, Cpu, Activity, ClipboardCheck, Rotate3D, Shield, Hammer, Cable, Scale } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Zap,
     title: "Instalaciones Eléctricas",
-    description: "Instalaciones eléctricas residenciales, comerciales e industriales con certificación RETIE y RETILAP."
+    description: "Instalaciones eléctricas residenciales, comerciales e industriales con certificación RETIE y RETILAP.",
+    link: "/servicios/instalaciones-electricas"
   },
   {
     icon: Wind,
@@ -45,7 +47,8 @@ const services = [
   {
     icon: ClipboardCheck,
     title: "Mantenimiento Preventivo",
-    description: "Mantenimiento preventivo y predictivo de equipos de generación."
+    description: "Mantenimiento preventivo y predictivo de equipos de generación.",
+    link: "/servicios/mantenimiento"
   },
   {
     icon: Wrench,
@@ -87,19 +90,36 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="hover:shadow-lg transition-all hover:scale-105 animate-fade-in border-border bg-card"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardHeader>
-                <service.icon className="h-12 w-12 text-primary mb-4" />
-                <CardTitle className="text-foreground">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
-              </CardContent>
-            </Card>
+            service.link ? (
+              <Link key={index} to={service.link}>
+                <Card 
+                  className="hover:shadow-lg transition-all hover:scale-105 animate-fade-in border-border bg-card h-full cursor-pointer"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardHeader>
+                    <service.icon className="h-12 w-12 text-primary mb-4" />
+                    <CardTitle className="text-foreground">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Link>
+            ) : (
+              <Card 
+                key={index}
+                className="hover:shadow-lg transition-all hover:scale-105 animate-fade-in border-border bg-card h-full"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <CardHeader>
+                  <service.icon className="h-12 w-12 text-primary mb-4" />
+                  <CardTitle className="text-foreground">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
+                </CardContent>
+              </Card>
+            )
           ))}
         </div>
       </div>
