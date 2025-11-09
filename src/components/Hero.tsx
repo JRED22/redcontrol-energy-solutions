@@ -1,18 +1,34 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Zap, Lightbulb, Settings } from "lucide-react";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Zap, Lightbulb, Settings, ChevronLeft, ChevronRight } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import banner1 from "@/assets/banner-1.jpg";
 import banner2 from "@/assets/banner-2.jpg";
 import banner3 from "@/assets/banner-3.jpg";
 
 const Hero = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   const banners = [
     {
@@ -35,6 +51,7 @@ const Hero = () => {
   return (
     <section id="inicio" className="relative min-h-screen pt-16">
       <Carousel
+        setApi={setApi}
         opts={{
           align: "start",
           loop: true,
@@ -114,6 +131,26 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+
+        {/* Navigation Buttons */}
+        <CarouselPrevious className="left-4 h-12 w-12 bg-background/80 hover:bg-background border-primary text-primary" />
+        <CarouselNext className="right-4 h-12 w-12 bg-background/80 hover:bg-background border-primary text-primary" />
+
+        {/* Dot Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {banners.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => api?.scrollTo(index)}
+              className={`h-3 w-3 rounded-full transition-all ${
+                current === index
+                  ? "bg-primary w-8"
+                  : "bg-muted-foreground/50 hover:bg-muted-foreground"
+              }`}
+              aria-label={`Ir al slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </Carousel>
     </section>
   );
