@@ -33,8 +33,8 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("productos")} className="text-foreground hover:text-primary transition-colors">
               Productos
             </button>
-            <button onClick={() => scrollToSection("automatizacion")} className="text-foreground hover:text-primary transition-colors">
-              Automatización
+            <button onClick={() => scrollToSection("galeria")} className="text-foreground hover:text-primary transition-colors">
+              Proyectos
             </button>
             <button onClick={() => scrollToSection("nosotros")} className="text-foreground hover:text-primary transition-colors">
               Nosotros
@@ -65,8 +65,8 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("productos")} className="block text-foreground hover:text-primary transition-colors">
               Productos
             </button>
-            <button onClick={() => scrollToSection("automatizacion")} className="block text-foreground hover:text-primary transition-colors">
-              Automatización
+            <button onClick={() => scrollToSection("galeria")} className="block text-foreground hover:text-primary transition-colors">
+              Proyectos
             </button>
             <button onClick={() => scrollToSection("nosotros")} className="block text-foreground hover:text-primary transition-colors">
               Nosotros
