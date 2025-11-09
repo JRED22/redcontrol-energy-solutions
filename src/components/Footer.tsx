@@ -1,4 +1,5 @@
-import { Zap, Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,9 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Zap className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">RED CONTROL</span>
+            <div className="mb-4">
+              <img src={logo} alt="RED CONTROL Ingeniería" className="h-16 w-auto" />
             </div>
             <p className="text-white/80">
               Soluciones integrales en electricidad, automatización y climatización
