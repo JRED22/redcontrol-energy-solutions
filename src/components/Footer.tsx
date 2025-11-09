@@ -29,8 +29,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#automatizacion" className="text-white/80 hover:text-primary transition-colors">
-                  Automatización
+                <a href="#galeria" className="text-white/80 hover:text-primary transition-colors">
+                  Proyectos
                 </a>
               </li>
               <li>
