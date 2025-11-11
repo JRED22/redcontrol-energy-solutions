@@ -1,23 +1,25 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Label } from "@/components/ui/label";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simple validation
+    // Validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Error",
@@ -27,12 +29,46 @@ const Contact = () => {
       return;
     }
 
-    toast({
-      title: "Mensaje enviado",
-      description: "Nos pondremos en contacto contigo pronto",
-    });
-    
-    setFormData({ name: "", email: "", message: "" });
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Error",
+        description: "Por favor ingresa un correo electrónico válido",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: formData.message.trim()
+        }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "✅ Mensaje enviado",
+        description: "Hemos recibido tu mensaje. Te contactaremos pronto.",
+      });
+      
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error: any) {
+      console.error("Error sending email:", error);
+      toast({
+        title: "❌ Error al enviar",
+        description: "Ocurrió un error al enviar el mensaje. Por favor intenta nuevamente.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleWhatsApp = () => {
@@ -124,8 +160,20 @@ const Contact = () => {
                   className="mt-2"
                 />
               </div>
-              <Button type="submit" className="w-full bg-primary hover:bg-secondary" size="lg">
-                Enviar Mensaje
+              <Button 
+                type="submit" 
+                className="w-full bg-primary hover:bg-secondary" 
+                size="lg"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="h-5 w-5 animate-spin mr-2" />
+                    Enviando...
+                  </>
+                ) : (
+                  "Enviar Mensaje"
+                )}
               </Button>
             </form>
           </div>
