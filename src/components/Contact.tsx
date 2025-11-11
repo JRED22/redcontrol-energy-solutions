@@ -36,7 +36,9 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/573001234567?text=Hola, me interesa conocer más sobre sus servicios", "_blank");
+    const phone = "573001234567"; // Código país (57) + número sin espacios ni símbolos
+    const message = encodeURIComponent("Hola, me interesa conocer más sobre sus servicios de RED CONTROL INGENIERÍA");
+    window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
 
   return (
