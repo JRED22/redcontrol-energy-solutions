@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface Video {
   id: string;
@@ -59,44 +67,66 @@ const VideoShowcase = () => {
     <section className="py-20 bg-gradient-to-b from-background to-secondary/20" id="videos">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
+          <div className="inline-block mb-4">
+            <span className="text-5xl">🎥</span>
+          </div>
           <h2 className="text-4xl font-bold mb-4 text-foreground">
-            Mira cómo funcionan nuestros productos
+            Videos Ilustrativos
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explora nuestros videos demostrativos y conoce de primera mano la calidad de nuestros servicios
+            Descubre cómo funcionan nuestros productos en acción
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {videos.map((video, index) => (
-            <Card
-              key={video.id}
-              className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 animate-fade-in border-border/50"
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => setSelectedVideo(video)}
-            >
-              <div className="relative aspect-video overflow-hidden bg-muted">
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center">
-                    <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
-                  </div>
-                </div>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {video.title}
-                </CardTitle>
-                <CardDescription className="line-clamp-2">
-                  {video.description}
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          ))}
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {videos.map((video) => (
+                <CarouselItem key={video.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card
+                    className="group cursor-pointer overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 h-full"
+                    onClick={() => setSelectedVideo(video)}
+                  >
+                    <div className="relative aspect-video overflow-hidden bg-muted">
+                      <img
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center shadow-lg">
+                          <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+                        </div>
+                      </div>
+                    </div>
+                    <CardHeader>
+                      <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                        {video.title}
+                      </CardTitle>
+                      <CardDescription className="line-clamp-2">
+                        {video.description}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious className="-left-12" />
+              <CarouselNext className="-right-12" />
+            </div>
+          </Carousel>
         </div>
 
         <Dialog open={!!selectedVideo} onOpenChange={() => setSelectedVideo(null)}>
