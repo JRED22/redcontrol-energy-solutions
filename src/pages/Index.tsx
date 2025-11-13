@@ -6,6 +6,7 @@ import Automation from "@/components/Automation";
 import VideoShowcase from "@/components/VideoShowcase";
 import BrandPartners from "@/components/BrandPartners";
 import Gallery from "@/components/Gallery";
+import TeamSection from "@/components/TeamSection";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ const Index = () => {
       <VideoShowcase />
       <BrandPartners />
       <Gallery />
+      <TeamSection />
       <About />
       <Contact />
       <Footer />
