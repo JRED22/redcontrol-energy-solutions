@@ -68,7 +68,6 @@ const VideoShowcase = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-block mb-4">
-            <span className="text-5xl">🎥</span>
           </div>
           <h2 className="text-4xl font-bold mb-4 text-foreground">
             Videos Ilustrativos
