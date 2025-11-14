@@ -13,7 +13,7 @@ import integracionElectronicaImg from "@/assets/services/integracion-electronica
 import analizadoresEmporiaImg from "@/assets/services/analizadores-emporia.jpg";
 import mantenimientoMotoresImg from "@/assets/services/motores-electricos.jpg";
 import mantenimientoBasculasImg from "@/assets/services/mantenimientobasculas.jpg";
-import mantenimientoGeneradoresImg from "@/assets/services/Mantenimiento Generadores.jpg";
+import mantenimientoGeneradoresImg from "@/assets/services/mantenimiento generadores.jpg";
 import tableroControlImg from "@/assets/services/tablerocontrol.jpg";
 
 import defaultImg from "@/assets/services/default.jpg";

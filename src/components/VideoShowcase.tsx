@@ -25,8 +25,13 @@ const videos: Video[] = [
     id: "1",
     title: "Instalación de Sistemas Eléctricos",
     description: "Proceso completo de instalación de tableros eléctricos industriales",
+<<<<<<< HEAD
     thumbnail: "https://www.smartgen.cn/yun/data/products/20220722/0310fa08f3f235207922193e672dd07b.png",
     videoUrl: "Z6Uvko3t_vU", // Reemplazar con ID real de YouTube
+=======
+    thumbnail: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80",
+    videoUrl: "XeiieUvHVnA",
+>>>>>>> 95c70745f646b6269362f52ff07471c6dddfda5c
     type: "youtube"
   },
   {
