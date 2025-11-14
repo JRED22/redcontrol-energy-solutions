@@ -26,7 +26,7 @@ const videos: Video[] = [
     title: "Instalación de Sistemas Eléctricos",
     description: "Proceso completo de instalación de tableros eléctricos industriales",
     thumbnail: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80",
-    videoUrl: "dQw4w9WgXcQ", // Reemplazar con ID real de YouTube
+    videoUrl: "XeiieUvHVnA",
     type: "youtube"
   },
   {
