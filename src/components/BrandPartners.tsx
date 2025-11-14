@@ -13,6 +13,7 @@ interface Brand {
   logo: string;
 }
 
+
 const brands: Brand[] = [
   {
     id: "1",
@@ -43,6 +44,11 @@ const brands: Brand[] = [
     id: "6",
     name: "Eaton",
     logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Eaton_Corporation_logo.svg"
+  },
+  {
+    id: "7",
+    name: "Smartgen",
+    logo: "https://smartgen.cn/img/logo_en.e5deccb7.png"
   }
 ];
 
