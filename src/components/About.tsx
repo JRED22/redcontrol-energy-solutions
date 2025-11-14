@@ -11,7 +11,6 @@ const About = () => {
             Compromiso con la excelencia y la innovación tecnológica
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
           <Card className="hover:shadow-lg transition-all animate-fade-in border-border bg-card">
             <CardHeader>
@@ -34,34 +33,6 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Ser una empresa líder en mantenimiento y automatización eléctrica a nivel regional, reconocida por su calidad y cumplimiento.
               </p>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <CardHeader className="text-center">
-              <Users className="h-16 w-16 text-primary mx-auto mb-4" />
-              <CardTitle className="text-3xl text-foreground">Nuestro Equipo</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-center text-muted-foreground mb-6 leading-relaxed">
-                Contamos con personal técnico altamente calificado y certificado en las últimas tecnologías del sector eléctrico, electrónico y de automatización.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">10+</div>
-                  <div className="text-sm text-muted-foreground">Años de Experiencia</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                  <div className="text-sm text-muted-foreground">Proyectos Completados</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Satisfacción de Clientes</div>
-                </div>
-              </div>
             </CardContent>
           </Card>
         </div>

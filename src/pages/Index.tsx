@@ -23,8 +23,9 @@ const Index = () => {
       <VideoShowcase />
       <BrandPartners />
       <Gallery />
-      <TeamSection />
       <About />
+      <TeamSection />
+      
       <Contact />
       <Footer />
       <ScrollToTopButton />

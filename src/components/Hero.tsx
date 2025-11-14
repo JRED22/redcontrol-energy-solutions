@@ -6,7 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import banner1 from "@/assets/banner-1.jpg";
 import banner2 from "@/assets/banner-2.jpg";
 import banner3 from "@/assets/banner-3.jpg";
-
+import logo from "@/assets/logo.png";
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -43,7 +43,7 @@ const Hero = () => {
     },
     {
       image: banner3,
-      title: "Eficiencia Energética",
+      title: "Distribuidor Autorizado Smartgen Energy",
       subtitle: "Climatización, monitoreo y control inteligente para reducir costos"
     }
   ];
@@ -78,22 +78,20 @@ const Hero = () => {
                 {/* Content */}
                 <div className="container mx-auto px-4 py-20 relative z-10">
                   <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-                    <div className="flex items-center justify-center gap-4 flex-wrap text-3xl md:text-5xl font-bold text-foreground">
-                      <span className="flex items-center gap-2">
-                        <Zap className="h-8 w-8 md:h-12 md:w-12 text-primary" />
-                        Solución
-                      </span>
-                      <span className="text-primary">|</span>
-                      <span className="flex items-center gap-2">
-                        <Lightbulb className="h-8 w-8 md:h-12 md:w-12 text-accent" />
-                        Innovación
-                      </span>
-                      <span className="text-primary">|</span>
-                      <span className="flex items-center gap-2">
-                        <Settings className="h-8 w-8 md:h-12 md:w-12 text-secondary" />
-                        Automatización
-                      </span>
-                    </div>
+
+               
+<div className="flex justify-center mb-6">
+  <img
+    src={logo}
+    alt="Dreamy Escapes Cartagena"
+    className="w-48 md:w-64 lg:w-72 drop-shadow-xl transition-transform duration-500 hover:scale-105 animate-fade-in"
+  />
+</div>
+
+
+
+
+
 
                     <div className="space-y-4">
                       <h2 className="text-2xl md:text-4xl font-bold text-foreground">
