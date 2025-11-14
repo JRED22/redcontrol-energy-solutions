@@ -116,20 +116,13 @@ const Contact = () => {
               </div>
             </div>
 
-            <Button 
-              onClick={handleWhatsApp}
-              className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center gap-2"
-              size="lg"
-            >
-              <MessageCircle className="h-5 w-5" />
-              Contactar por WhatsApp
-            </Button>
+           
 
             <div className="mt-8">
               <h3 className="text-xl font-bold text-foreground mb-4">Nuestra Ubicación</h3>
               <div className="rounded-lg overflow-hidden shadow-lg border border-border">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9422448684614!2d-74.07209968523657!3d4.6097102427876205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQ29sb21iaWE!5e0!3m2!1ses!2sco!4v1234567890123"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.498392045249!2d-75.47075602468409!3d10.381932866345766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef6242596843f17%3A0xf5376dc1e3c78fad!2sCl.%2026%20%2371%2C%20Medell%C3%ADn%2C%20Cartagena%20de%20Indias%2C%20Provincia%20de%20Cartagena%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1763154264764!5m2!1ses!2sco"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -140,6 +133,14 @@ const Contact = () => {
                 />
               </div>
             </div>
+             <Button 
+              onClick={handleWhatsApp}
+              className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center gap-2"
+              size="lg"
+            >
+              <MessageCircle className="h-5 w-5" />
+              Contactar por WhatsApp
+            </Button>
           </div>
 
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
