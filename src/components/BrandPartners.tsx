@@ -47,8 +47,14 @@ const brands: Brand[] = [
   },
   {
     id: "7",
-    name: "Smartgen",
+    name: "Schneider Electric",
     logo: "https://smartgen.cn/img/logo_en.e5deccb7.png"
+  }
+  ,
+  {
+    id: "8",
+    name: "Caterpillar",
+    logo: " https://upload.wikimedia.org/wikipedia/commons/d/d0/Caterpillar_logo.svg"
   }
 ];
 
