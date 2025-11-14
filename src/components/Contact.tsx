@@ -124,6 +124,22 @@ const Contact = () => {
               <MessageCircle className="h-5 w-5" />
               Contactar por WhatsApp
             </Button>
+
+            <div className="mt-8">
+              <h3 className="text-xl font-bold text-foreground mb-4">Nuestra Ubicación</h3>
+              <div className="rounded-lg overflow-hidden shadow-lg border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9422448684614!2d-74.07209968523657!3d4.6097102427876205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoSwgQ29sb21iaWE!5e0!3m2!1ses!2sco!4v1234567890123"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación de RED CONTROL INGENIERÍA"
+                />
+              </div>
+            </div>
           </div>
 
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
