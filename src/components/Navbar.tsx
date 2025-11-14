@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
@@ -42,9 +49,55 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("galeria")} className="text-foreground hover:text-primary transition-colors">
               Proyectos
             </button>
-            <button onClick={() => scrollToSection("nosotros")} className="text-foreground hover:text-primary transition-colors">
-              Nosotros
-            </button>
+            
+            {/* Dropdown Nosotros */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-foreground hover:text-primary bg-transparent hover:bg-accent/50 data-[state=open]:bg-accent/50">
+                    Nosotros
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="bg-popover/98 backdrop-blur-md border-border shadow-lg">
+                    <ul className="grid w-[280px] gap-1 p-2">
+                      <li>
+                        <button
+                          onClick={() => scrollToSection("nosotros")}
+                          className="block w-full text-left select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Sobre Nosotros</div>
+                          <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
+                            Conoce nuestra historia y valores
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => scrollToSection("nosotros")}
+                          className="block w-full text-left select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Misión y Visión</div>
+                          <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
+                            Nuestro compromiso y objetivos
+                          </p>
+                        </button>
+                      </li>
+                      <li>
+                        <button
+                          onClick={() => scrollToSection("equipo")}
+                          className="block w-full text-left select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                        >
+                          <div className="text-sm font-medium leading-none">Nuestro Equipo</div>
+                          <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
+                            Profesionales expertos y certificados
+                          </p>
+                        </button>
+                      </li>
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <Button onClick={() => scrollToSection("contacto")} className="bg-primary hover:bg-secondary">
               Contacto
             </Button>
@@ -61,7 +114,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4">
+          <div className="md:hidden py-4 space-y-3">
             <button onClick={() => scrollToSection("inicio")} className="block text-foreground hover:text-primary transition-colors">
               Inicio
             </button>
@@ -80,9 +133,21 @@ const Navbar = () => {
             <button onClick={() => scrollToSection("galeria")} className="block text-foreground hover:text-primary transition-colors">
               Proyectos
             </button>
-            <button onClick={() => scrollToSection("nosotros")} className="block text-foreground hover:text-primary transition-colors">
-              Nosotros
-            </button>
+            
+            {/* Submenu Nosotros Mobile */}
+            <div className="border-l-2 border-primary/30 pl-4 space-y-2">
+              <p className="text-sm font-semibold text-primary mb-2">Nosotros</p>
+              <button onClick={() => scrollToSection("nosotros")} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Sobre Nosotros
+              </button>
+              <button onClick={() => scrollToSection("nosotros")} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Misión y Visión
+              </button>
+              <button onClick={() => scrollToSection("equipo")} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                Nuestro Equipo
+              </button>
+            </div>
+            
             <Button onClick={() => scrollToSection("contacto")} className="w-full bg-primary hover:bg-secondary">
               Contacto
             </Button>
