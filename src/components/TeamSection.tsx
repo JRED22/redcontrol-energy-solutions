@@ -1,6 +1,8 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import jhonImg from "@/assets/team/jhon.jpg";
+import edwinImg from "@/assets/team/edwin.jpg";
+import nineImg from "@/assets/team/nine.jpg";
 
 
 interface TeamMember {
@@ -16,8 +18,8 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     id: "1",
-    name: "Jhon Harold Rojo",
-    position: "Fundador-Tecnico",
+    name: "Jhon H. Rojo",
+    position: "Fundador-Tecnologo",
     image:  jhonImg,
     linkedin: "https://linkedin.com",
     email: "jhonharoldrojo@gmail.com",
@@ -25,18 +27,18 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: "2",
-    name: "Carlos Martínez",
+    name: "Edwin A. Rojo",
     position: "Ingeniero Eléctrico Senior",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+    image: edwinImg,
     linkedin: "https://linkedin.com",
     email: "carlos@redcontrol.com",
     phone: "+57 300 123 4568"
   },
   {
     id: "3",
-    name: "Ana Rodríguez",
+    name: "Janines Arellano",
     position: "Especialista en Automatización",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+    image: nineImg,
     linkedin: "https://linkedin.com",
     email: "ana@redcontrol.com",
     phone: "+57 300 123 4569"
