@@ -11,69 +11,79 @@ import sistemasRiegoImg from "@/assets/services/sistemas-riego.jpg";
 import estructurasMetalicasImg from "@/assets/services/estructuras-metalicas.jpg";
 import integracionElectronicaImg from "@/assets/services/integracion-electronica.jpg";
 import analizadoresEmporiaImg from "@/assets/services/analizadores-emporia.jpg";
-import mantenimientoPreventivoImg from "@/assets/services/mantenimiento-preventivo.jpg";
+import mantenimientoMotoresImg from "@/assets/services/motores-electricos.jpg";
+import mantenimientoBasculasImg from "@/assets/services/mantenimientobasculas.jpg";
+import mantenimientoGeneradoresImg from "@/assets/services/Mantenimiento Generadores.jpg";
+import tableroControlImg from "@/assets/services/tablerocontrol.jpg";
+
 import defaultImg from "@/assets/services/default.jpg";
+
 
 // Service image mapping - easily customizable
 // To add/edit images: update the mapping below with the service title and image path
 const serviceImageMap: Record<string, string> = {
-  "Instalaciones Eléctricas": instalacionesElectricasImg,
-  "Climatización": climatizacionImg,
-  "Tableros Eléctricos": tablerosElectricosImg,
+  "Instalaciones-Auditorias Eléctricas": instalacionesElectricasImg,
+  "Refrigeracion Residencial y Comercial": climatizacionImg,
+  "Mantenimiento - Instalacion de Variadores": tablerosElectricosImg,
   "Automatización Industrial": automatizacionIndustrialImg,
   "Sistemas de Riego": sistemasRiegoImg,
   "Estructuras Metálicas": estructurasMetalicasImg,
-  "Integración Electrónica": integracionElectronicaImg,
+  "Integración  y Reparación Electrónica": integracionElectronicaImg,
   "Analizadores Emporia": analizadoresEmporiaImg,
-  "Mantenimiento Preventivo": mantenimientoPreventivoImg,
+  "Mantenimiento de Motores": mantenimientoMotoresImg,
+  "Mantenimiento de Basculas": mantenimientoBasculasImg,
+  "Mantenimiento Generadores": mantenimientoGeneradoresImg,
+   "Tableros de Control": tableroControlImg,
+   
+
+  
+ 
+  
   // Services without specific images will use the default background
 };
 
 const services = [
   {
     icon: Zap,
-    title: "Instalaciones Eléctricas",
+    title: "Instalaciones-Auditorias Eléctricas",
     description: "Instalaciones eléctricas residenciales, comerciales e industriales con certificación RETIE y RETILAP.",
     link: "/servicios/instalaciones-electricas"
   },
   {
     icon: Wind,
-    title: "Climatización",
+    title: "Refrigeracion Residencial y Comercial",
     description: "Instalación y mantenimiento de sistemas de aire acondicionado para todo tipo de espacios."
   },
   {
     icon: Gauge,
-    title: "Tableros Eléctricos",
-    description: "Diseño, montaje y mantenimiento de tableros eléctricos, bombas y variadores de velocidad."
+    title: "Mantenimiento - Instalacion de Variadores",
+    description: "Diseño, montaje y mantenimiento de variadores de frecuencia diferentes marcas,para sistemas de bombas y motores."
+  },
+   {
+    icon: Activity,
+    title: "Analizadores Emporia",
+    description: "Suministro e instalación de analizadores de red eléctrica Emporia para monitoreo de energía."
+  },
+   {
+    icon: Droplets,
+    title: "Sistemas de Riego",
+    description: "Instalación de sistemas de riego automatizados para agricultura y jardinería."
   },
   {
     icon: Cog,
     title: "Automatización Industrial",
     description: "Automatización y control de procesos eléctricos e hidráulicos con tecnología avanzada."
   },
-  {
-    icon: Droplets,
-    title: "Sistemas de Riego",
-    description: "Instalación de sistemas de riego automatizados para agricultura y jardinería."
-  },
-  {
-    icon: Hammer,
-    title: "Estructuras Metálicas",
-    description: "Fabricación e instalación de estructuras metálicas para proyectos industriales."
-  },
+ 
   {
     icon: Cpu,
-    title: "Integración Electrónica",
+    title: "Integración  y Reparación Electrónica",
     description: "Montaje e integración de equipos electrónicos e industriales."
   },
-  {
-    icon: Activity,
-    title: "Analizadores Emporia",
-    description: "Suministro e instalación de analizadores de red eléctrica Emporia para monitoreo de energía."
-  },
+ 
   {
     icon: ClipboardCheck,
-    title: "Mantenimiento Preventivo",
+    title: "Mantenimiento Generadores",
     description: "Mantenimiento preventivo y predictivo de equipos de generación.",
     link: "/servicios/mantenimiento"
   },
@@ -87,11 +97,7 @@ const services = [
     title: "Mantenimiento de Motores",
     description: "Diagnóstico, limpieza y cambio de rodamientos en motores eléctricos con informes."
   },
-  {
-    icon: Shield,
-    title: "Reparación Electrónica",
-    description: "Reparación y reemplazo de bobinas, diodos, tarjetas de control y componentes AVR."
-  },
+  
   {
     icon: Cable,
     title: "Tableros de Control",
@@ -99,7 +105,7 @@ const services = [
   },
   {
     icon: Scale,
-    title: "Mantenimiento de Básculas",
+    title: "Mantenimiento de Basculas",
     description: "Mantenimiento, calibración y verificación de básculas electrónicas."
   }
 ];
