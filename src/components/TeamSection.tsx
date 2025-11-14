@@ -1,5 +1,7 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import jhonImg from "@/assets/team/jhon.jpg";
+
 
 interface TeamMember {
   id: string;
@@ -15,8 +17,8 @@ const teamMembers: TeamMember[] = [
   {
     id: "1",
     name: "Jhon Harold Rojo",
-    position: "Director General",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+    position: "Fundador-Tecnico",
+    image:  jhonImg,
     linkedin: "https://linkedin.com",
     email: "jhonharoldrojo@gmail.com",
     phone: "+57 300 123 4567"
