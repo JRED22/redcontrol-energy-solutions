@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const phone = "573001234567"; // Código país (57) + número sin espacios ni símbolos
+    const phone = "573145546724"; // Código país (57) + número sin espacios ni símbolos
     const message = encodeURIComponent("Hola, me interesa conocer más sobre sus servicios de RED CONTROL INGENIERÍA");
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
@@ -96,21 +96,21 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Teléfono</h4>
-                    <p className="text-muted-foreground">+57 300 123 4567</p>
+                    <p className="text-muted-foreground">+57 314 554 6724</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">info@redcontrol.com</p>
+                    <p className="text-muted-foreground">jhonharoldrojo@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Ubicación</h4>
-                    <p className="text-muted-foreground">Colombia</p>
+                    <p className="text-muted-foreground">Cartagena bolivar San fernando CRA 83 26 100 APTO 303</p>
                   </div>
                 </div>
               </div>
