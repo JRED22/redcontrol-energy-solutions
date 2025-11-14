@@ -17,7 +17,7 @@ const brands: Brand[] = [
   {
     id: "1",
     name: "Schneider Electric",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Schneider_Electric_2007.svg/320px-Schneider_Electric_2007.svg.png"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/95/Schneider_Electric_2007.svg"
   },
   {
     id: "2",
@@ -42,7 +42,7 @@ const brands: Brand[] = [
   {
     id: "6",
     name: "Eaton",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Eaton_Corporation_logo.svg/320px-Eaton_Corporation_logo.svg.png"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Eaton_Corporation_logo.svg"
   }
 ];
 
