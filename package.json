@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/JRED22/redcontrol-energy-solutions",
+  "homepage": "https://jred22.github.io/redcontrol-energy-solutions/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
