@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/redcontrol-energy-solutions/", // 👈 NECESARIO para GitHub Pages
+  base: "/redcontrol-energy-solutions/",
   server: {
     host: "::",
     port: 8080,
