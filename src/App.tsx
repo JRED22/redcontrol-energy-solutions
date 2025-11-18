@@ -15,15 +15,17 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      
+      {/* 👇 Basename correcto para GitHub Pages */}
+      <BrowserRouter basename="/redcontrol-energy-solutions">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/servicios/instalaciones-electricas" element={<InstalacionesElectricas />} />
           <Route path="/servicios/mantenimiento" element={<Mantenimiento />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
     </TooltipProvider>
   </QueryClientProvider>
 );
