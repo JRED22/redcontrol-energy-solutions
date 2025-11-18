@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const phone = "573001234567"; // Código país (57) + número sin espacios ni símbolos
+    const phone = "573145546724"; // Código país (57) + número sin espacios ni símbolos
     const message = encodeURIComponent("Hola, me interesa conocer más sobre sus servicios de RED CONTROL INGENIERÍA");
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };
@@ -96,27 +96,44 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Teléfono</h4>
-                    <p className="text-muted-foreground">+57 300 123 4567</p>
+                    <p className="text-muted-foreground">+57 314 554 6724</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Email</h4>
-                    <p className="text-muted-foreground">info@redcontrol.com</p>
+                    <p className="text-muted-foreground">jhonharoldrojo@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h4 className="font-semibold text-foreground">Ubicación</h4>
-                    <p className="text-muted-foreground">Colombia</p>
+                    <p className="text-muted-foreground">Cartagena bolivar San fernando CRA 83 26 100 APTO 303</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <Button 
+           
+
+            <div className="mt-8">
+              <h3 className="text-xl font-bold text-foreground mb-4">Nuestra Ubicación</h3>
+              <div className="rounded-lg overflow-hidden shadow-lg border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.498392045249!2d-75.47075602468409!3d10.381932866345766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef6242596843f17%3A0xf5376dc1e3c78fad!2sCl.%2026%20%2371%2C%20Medell%C3%ADn%2C%20Cartagena%20de%20Indias%2C%20Provincia%20de%20Cartagena%2C%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1763154264764!5m2!1ses!2sco"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación de RED CONTROL INGENIERÍA"
+                />
+              </div>
+            </div>
+             <Button 
               onClick={handleWhatsApp}
               className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center gap-2"
               size="lg"
