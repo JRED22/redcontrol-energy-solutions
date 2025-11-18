@@ -1,0 +1,384 @@
+[33mcommit 08867a8a1af18d63f7a78bd4e7ec3e900617ba74[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/edit/edt-e44d290c-7911-419a-afc2-9f3833a0de6a[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:32:19 2025 -0500
+
+    ed2
+
+[33mcommit 5a12e733913372ed8008b2e37a04b118f48f03f6[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:26:25 2025 -0500
+
+    ed
+
+[33mcommit 2df9943a1f8c4e4eb4bdb0ad07d812643aaea013[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:23:53 2025 -0500
+
+    page4
+
+[33mcommit 49ce4b7bdc134c2c5db01179cdb21803c508c8b6[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:17:11 2025 -0500
+
+    page4
+
+[33mcommit c8bf669723a2218675347d65b4bb85cbbbd61d0b[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:09:24 2025 -0500
+
+    page3
+
+[33mcommit 69d7aa0223f025144ce70e73b5826e9dc0142fd9[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 09:01:22 2025 -0500
+
+    page 3 -produccion
+
+[33mcommit 89e7ac6abfd47d59020686dce4ef8245b73fb488[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 08:52:38 2025 -0500
+
+    page 2
+
+[33mcommit 999d4ce82505f223c1657c2811d20da47cbcb263[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Mon Nov 17 08:50:53 2025 -0500
+
+    page
+
+[33mcommit 93cbeb523e0cab620f4a368db13c84283f06b92d[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 16:05:52 2025 -0500
+
+    mapa
+
+[33mcommit 1c671b861c793f6a26290700f2babf0e46975137[m
+Merge: e0ead9a 0acf0c3
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 16:01:32 2025 -0500
+
+    Merge branch 'main' of https://github.com/JRED22/redcontrol-energy-solutions
+
+[33mcommit e0ead9aa6202f44b3a3e6b45018d30a090875655[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 16:01:07 2025 -0500
+
+    Actualizar información de contacto en el componente Contact
+
+[33mcommit 0acf0c3650b791a5022180854fdd5af80c0511db[m[33m ([m[1;31morigin/edit/edt-6ebbaf41-f026-4f20-8fcd-79cce6f9b177[m[33m)[m
+Merge: 58ffd6f bcac5b5
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 20:51:20 2025 +0000
+
+    Add map to contact section
+    
+    Integrate an interactive Google Maps iframe into the Contact component, placing a map in the left column under contact info to display the location. No API keys required.
+    
+    X-Lovable-Edit-ID: edt-1928dbd1-69e5-4881-a3d2-984b98f62032
+
+[33mcommit bcac5b58615a54e5aeba263c95c8850b96f1b9cd[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 20:51:19 2025 +0000
+
+    Changes
+
+[33mcommit 58ffd6f81c7b2e1f3b2200c4607926ebe63e6448[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 15:46:09 2025 -0500
+
+    Eliminar línea de fusión temporal en VideoShowcase.tsx
+
+[33mcommit 59813d65e2384e48082f03e62eb7576230b5c74c[m
+Merge: 8ef7018 b12f099
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 15:36:28 2025 -0500
+
+    Merge branch 'main' of https://github.com/JRED22/redcontrol-energy-solutions
+
+[33mcommit 8ef7018c80b403ecccb3276acce5903a62286337[m
+Merge: 3bd8227 95c7074
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 15:28:13 2025 -0500
+
+    Merge branch 'main' of https://github.com/JRED22/redcontrol-energy-solutions
+
+[33mcommit b12f0999d3c2def1e3fce6068326956bb731aa84[m[33m ([m[1;31morigin/edit/edt-e7731e64-1323-4230-8e8f-9bb1181b5a21[m[33m)[m
+Merge: 3bd8227 95c7074
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 15:28:13 2025 -0500
+
+    Merge branch 'main' of https://github.com/JRED22/redcontrol-energy-solutions
+
+[33mcommit 3bd8227c91610645428707fddad015251a22ac24[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 15:09:27 2025 -0500
+
+    videos1 parte
+
+[33mcommit 95c70745f646b6269362f52ff07471c6dddfda5c[m
+Merge: fadf501 c02c89c
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 19:54:24 2025 +0000
+
+    Incorporate YouTube video
+    
+    Add the provided YouTube video ID (XeiieUvHVnA) to the Videos Ilustrativos section by updating VideoShowcase.tsx to replace a placeholder with the real video ID, ensuring the illustrative video is correctly displayed.
+    
+    X-Lovable-Edit-ID: edt-d3a51bb5-cf51-4ae3-929a-c6852e97569b
+
+[33mcommit c02c89c4ed6e1cbb4b69c46b6875001eb44ce05d[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 19:54:23 2025 +0000
+
+    Changes
+
+[33mcommit becc8f78a151155e9a71a3832028a1d80e50388b[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 14:39:15 2025 -0500
+
+    marcas
+
+[33mcommit fadf501c3df3dc4a60c1f16e29054074351f89e3[m
+Merge: 18c0f20 97c1ced
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 19:38:15 2025 +0000
+
+    Sincronizar imágenes servicios
+    
+    Ajusté el mapeo de imágenes en Services.tsx para tres servicios específicos:
+    - Motores eléctricos, Mantenimiento de Basculas, Mantenimiento Generadores.
+    Corrigí la importación del archivo para Generadores, usando el nombre de archivo correcto con minúsculas y espacio: manten... generadores.jpg. Aseguré que el mapa de imágenes coincida con los títulos de los servicios.
+    
+    X-Lovable-Edit-ID: edt-e8f56ac2-f554-4984-9ec3-9cdeba4c23c5
+
+[33mcommit 97c1cedf193aeb29a8640389a8f25a39c80a77e4[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 19:38:14 2025 +0000
+
+    Changes
+
+[33mcommit 18c0f207a2421b165ef2473de63b3f4df54c6dc9[m[33m ([m[1;31morigin/edit/edt-e5fd0b4e-a88e-4160-af3b-354c00657967[m[33m)[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 14:22:02 2025 -0500
+
+    marcas-home
+
+[33mcommit 6f4297373ffc0a81f6182f555e71d66e6bb516e8[m
+Merge: f7c4672 22eff09
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 15:07:09 2025 +0000
+
+    Add return to Home nav
+    
+    Update Navbar to navigate to index when on service pages, enabling a smooth route back to the homepage instead of in-page scrolling. If on the main page, keep existing scroll-to-section behavior. Ensures seamless navigation from /servicios/instalaciones-electricas back to the landing page.
+    
+    X-Lovable-Edit-ID: edt-96a34b1c-c75e-49b8-a6ca-7c906af766f1
+
+[33mcommit 22eff09478e7c794b4754b64ef9ce2ea8336ad3b[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 15:07:08 2025 +0000
+
+    Changes
+
+[33mcommit f7c467285edb07a5027cc76e2a1debdf43eef81f[m[33m ([m[1;31morigin/edit/edt-96a34b1c-c75e-49b8-a6ca-7c906af766f1[m[33m)[m
+Merge: 2ebca3b a70bccc
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 13:50:57 2025 +0000
+
+    Rediseñar Nosotros y Equipo
+    
+    Actualiza la landing con una sección moderna de Nosotros/Misión/Visión en tarjetas grandes y colores diferenciados, añade la nueva sección Nuestro Equipo con tarjetas circulares y perfil de miembros, integra un submenú desplegable en el Navbar bajo el ítem Nosotros, y asegura diseño responsive y coherente con Tailwind + shadcn/ui. Incluye iconos, hover elegante, tipografía moderna y animaciones suaves.
+    
+    X-Lovable-Edit-ID: edt-09977264-2dae-4e61-a761-076176836b9a
+
+[33mcommit a70bcccb6ed11d91d3f3ed74b44ee4dbd63b80cc[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Fri Nov 14 13:50:56 2025 +0000
+
+    Changes
+
+[33mcommit 2ebca3b3a068de8ac1ce1d69da1bc67972a3c217[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 08:46:56 2025 -0500
+
+    teams
+
+[33mcommit 379710800fa34948fd5dd62a28b1667abb4a614d[m
+Author: Jhon Harold <jhonharoldrojo@gmail.com>
+Date:   Fri Nov 14 08:09:41 2025 -0500
+
+    video2
+
+[33mcommit 45117f61a4c4958df72ea9470f1081f7d2a7038c[m
+Merge: a75f450 8b4b5a0
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:59:25 2025 +0000
+
+    Add TeamSection component and integrate
+    
+    Introduce modern "Nuestro Equipo" section with circular avatar cards, hover effects, fade/zoom animations, and responsive grid; populate from assets and social links. Add TeamSection.tsx, update Index to render it, and ensure styling aligns with existing UI.
+    
+    X-Lovable-Edit-ID: edt-253a9869-0278-4d74-bea2-404fc28875d8
+
+[33mcommit 8b4b5a03fb260e5d0075ed9affc39dfdf49f1370[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:59:24 2025 +0000
+
+    Changes
+
+[33mcommit a75f4507609922854fcdd1546ab8842deebe1aa5[m
+Merge: 05cd00e d6204b4
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:56:27 2025 +0000
+
+    Add video carousel section
+    
+    Implement a responsive video carousel for the landing page, replacing grid with Embla-based slider, including header subtitle, navigation arrows, pagination, and hover card effects. Data-driven videos array prepared for easy updates; integrate with existing Videos section and Navbar.
+    
+    X-Lovable-Edit-ID: edt-333d8275-c037-4743-a0c9-5480c786e694
+
+[33mcommit d6204b40bb36736e55124d716c88815622baa258[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:56:26 2025 +0000
+
+    Changes
+
+[33mcommit 05cd00e5f3f18a9aff533cfd21cae3c38d5a30ef[m
+Merge: c775ca0 0a5154d
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:52:23 2025 +0000
+
+    Add scroll-to-top button and navbar links
+    
+    Introduce a floating ScrollToTopButton (appears after scrolling, smooth scroll to top) and update Navbar with Videos and Marcas links for in-page smooth scrolling. Includes component scaffolding, code updates to Navbar and Index placement suggestion, and styling aligned with Tailwind/shadcn/ui.
+    
+    X-Lovable-Edit-ID: edt-d2ded5a7-e4ad-47a1-85b5-65a13dd127df
+
+[33mcommit 0a5154db82a81557380cda6150b963079f2125fa[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:52:22 2025 +0000
+
+    Changes
+
+[33mcommit c775ca0c0e1b887f29970b337658c91c875bd3c6[m
+Merge: 7fcb9b1 5cc7212
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:48:13 2025 +0000
+
+    Add videos and brands sections on home
+    
+    Introduce two new visual sections on the homepage:
+    - VideoIllustrationShowcase: grid/carousel of product videos with titles, descriptions, modal playback, responsive design, and easy data updates via a JSON array.
+    - BrandPartners: carousel of brand logos with hover effects, responsive layout, and easy data updates via a JSON array.
+    
+    Files added/updated:
+    - src/components/VideoShowcase.tsx
+    - src/components/BrandPartners.tsx
+    - Updated src/pages/index or Home integration to render both sections using data arrays.
+    
+    X-Lovable-Edit-ID: edt-6cf46e67-a64c-40ae-aa87-283a1d629d1d
+
+[33mcommit 5cc7212558d8f135af89155f47e8c9690f8d17c6[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Thu Nov 13 17:48:13 2025 +0000
+
+    Changes
+
+[33mcommit 7fcb9b1d60e81925a9b883ab66ebdad142c8b012[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Nov 11 20:22:14 2025 +0000
+
+    Automate service card backgrounds
+    
+    Implement dynamic background mapping for service cards using titles,
+    add edge function to send contact emails via Resend (Lovable Cloud),
+    and update Contact.tsx to call the new email sending endpoint. Includes
+    prepared placeholders for JSON mapping, accessibility considerations, and
+    responsive hover/fallback behavior.
+
+[33mcommit 51129feccdef3c85fc8bd8075b6158009e3dad80[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Nov 11 20:18:24 2025 +0000
+
+    Connect to Lovable Cloud
+    
+    Enable Lovable Cloud (Supabase) backend integration for the project to support email sending via Resend and future serverless functions. Prepare to create edge function for sending emails and update Contact.tsx to call the new backend.
+
+[33mcommit 1d77217c6c3e0fd24b1e60b841c555772164ec9c[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Nov 11 20:12:46 2025 +0000
+
+    Fix WhatsApp contact flow
+    
+    Update the contact WhatsApp handler to reliably open the chat:
+    - Use a separated phone variable and encoded message
+    - Build wa.me URL with proper formatting
+    - Ensure compatibility across mobile and desktop
+    - Easier future updates for the target number and message
+
+[33mcommit 2ade9b89a207a39bf4233913979be5a5f6b0863f[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Nov 11 20:05:07 2025 +0000
+
+    Añadir fondos automáticos a tarjetas
+    
+    Implementa fondos semánticos para cards de servicios:
+    - Mapear títulos a imágenes de fondo con overlay, hover y fallback.
+    - Soporte responsive, accesibilidad y transiciones suaves.
+    - Permite configuración de mapeo vía JSON; incluye fallback default.jpg.
+
+[33mcommit 3117e77bd4077d60afc52e2a31cdff31ad945377[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:48:18 2025 +0000
+
+    Create individual service pages
+    
+    Create detailed pages for each service, including descriptions, galleries, quote forms, and FAQs. Update the Services component to link to these new pages and add corresponding routes in App.tsx.
+
+[33mcommit 8416d6a02c9c992a4af015b1a82bb2bcb720d0bf[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:44:21 2025 +0000
+
+    Add blue background to footer logo
+    
+    Update footer logo to use a version with a dark blue background to better match the footer's color scheme.
+
+[33mcommit 973457ea461912ccad938fa4514e2e0ca4f7afca[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:43:12 2025 +0000
+
+    Revert logo background change
+    
+    Revert the change to use a transparent logo. The original logo with a white background looks better on the footer.
+
+[33mcommit 3a1bbd11f40d0ab70a9d463133998ecb3bbb3063[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:42:03 2025 +0000
+
+    Remove logo background
+    
+    Remove white background from the corporate logo to improve its appearance on the dark blue footer. Update references in Navbar and Footer components to use the new transparent logo.
+
+[33mcommit 30326e48f0b41cf78d10b64a097b9605da3329f7[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:40:45 2025 +0000
+
+    Add logo to footer
+    
+    Include the company logo in the footer section of the website. The previous Zap icon and company name have been replaced with the imported logo image.
+
+[33mcommit 218dc1201f2be319b86536350778f4c52d38a3a5[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:39:00 2025 +0000
+
+    Add carousel navigation controls
+    
+    Add previous/next buttons and dot indicators to the hero carousel for manual navigation. The autoplay functionality is preserved.
+
+[33mcommit c66ad3b2774fe3b60f6d98406fa9e216c041bc71[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Sun Nov 9 11:36:36 2025 +0000
+
+    Add carousel banners to hero section
+    
+    Implement a carousel for the hero section with three distinct banners. Each banner features a relevant image and updated text content, including titles and subtitles that reflect the company's services in electrical installations, automation, and energy efficiency. The carousel includes autoplay functionality for a dynamic user experience.
