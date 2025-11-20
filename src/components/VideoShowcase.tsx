@@ -23,9 +23,9 @@ interface Video {
 const videos: Video[] = [
   {
     id: "1",
-    title: "Instalación de Sistemas Eléctricos",
+    title: "Smartgen-controlador de grupo electrógeno HGM1790N",
     description: "Proceso completo de instalación de tableros eléctricos industriales",
-    thumbnail: "https://www.smartgen.cn/yun/data/products/20220722/0310fa08f3f235207922193e672dd07b.png",
+    thumbnail: "https://ae-pic-a1.aliexpress-media.com/kf/S0fb93e84b44b4ae793184f792895842fy.jpg_720x720q75.jpg_.avif",
     videoUrl: "Z6Uvko3t_vU", // Reemplazar con ID real de YouTube
 
     type: "youtube"

@@ -5,12 +5,13 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Badge } from "@/components/ui/badge";
 
 // Import project images
-import projectResidential1 from "@/assets/project-residential-1.jpg";
+import projectResidential1 from "@/assets/jobs/20250803_115237.jpg";
 import projectResidential2 from "@/assets/project-residential-2.jpg";
-import projectCommercial1 from "@/assets/project-commercial-1.jpg";
-import projectCommercial2 from "@/assets/project-commercial-2.jpg";
+import projectResidential3 from "@/assets/jobs/20250930_142541.jpg";
+import projectCommercial1 from "@/assets/jobs/20250728_085611.jpg";
+import projectCommercial2 from "@/assets/jobs/20251003_151936.jpg";
 import projectIndustrial1 from "@/assets/project-industrial-1.jpg";
-import projectIndustrial2 from "@/assets/project-industrial-2.jpg";
+import projectIndustrial2 from "@/assets/jobs/20250916_153911.jpg";
 
 interface Project {
   id: number;
@@ -24,19 +25,32 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Instalación Eléctrica Residencial Premium",
+    title: "Instalación Eléctrica Residencial",
     category: "residencial",
     image: projectResidential1,
-    description: "Sistema eléctrico completo con domótica en residencia de lujo",
+    description: "Cambio protecciones electricas enchufables a minipragmas sencibles a disparon con Intensidad Cortocircuito menor",
     details: [
-      "Tablero principal de 24 circuitos",
-      "Sistema de iluminación LED inteligente",
+      "Tablero principal de12 circuitos",
+      "Cambio de caja con peine 12 ciercitos",
+      "Instalación de circuitos especializados",
+      "Certificación RETIE completa"
+    ]
+  },
+   {
+    id: 2,
+    title: "Instalación Eléctrica Residencial",
+    category: "residencial",
+    image: projectResidential3,
+    description: "Cambio protecciones electricas enchufables a minipragmas sencibles a disparon con Intensidad Cortocircuito menor",
+    details: [
+      "Tablero principal de12 circuitos",
+      "Cambio de caja con peine 12 ciercitos",
       "Instalación de circuitos especializados",
       "Certificación RETIE completa"
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "Sistema HVAC Residencial",
     category: "residencial",
     image: projectResidential2,
@@ -49,33 +63,33 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 3,
-    title: "Iluminación Comercial LED",
+    id: 4,
+    title: "Sistema Automatico control Iluminacion Helipuerto",
     category: "comercial",
     image: projectCommercial1,
-    description: "Renovación completa de iluminación en centro comercial",
+    description: "Renovación completa de iluminación helipuerto",
     details: [
-      "Instalación de 300+ luminarias LED",
+      "Instalación de 25 luminarias LED",
       "Reducción del 60% en consumo energético",
       "Sistema de control automático",
-      "Inversión recuperada en 18 meses"
-    ]
-  },
-  {
-    id: 4,
-    title: "Automatización Oficinas Corporativas",
-    category: "comercial",
-    image: projectCommercial2,
-    description: "Sistema de automatización y control de energía para edificio de oficinas",
-    details: [
-      "Analizadores de red Emporia",
-      "Control de iluminación por zonas",
-      "Sistema de gestión de energía",
-      "Monitoreo en tiempo real"
+    
     ]
   },
   {
     id: 5,
+    title: "Automatización Luces jardin-Piscina",
+    category: "comercial",
+    image: projectCommercial2,
+    description: "Sistema de automatización luces jardin , luces de piscina y sistema de energia",
+    details: [
+      "Proteccion con minibreaker y diferenciales",
+      "Instalacion Totalizador ",
+      "Temporizadores programables",
+      "Integración con sistema domótico"
+    ]
+  },
+  {
+    id: 6,
     title: "Sala de Control Industrial",
     category: "industrial",
     image: projectIndustrial1,
@@ -88,14 +102,14 @@ const projects: Project[] = [
     ]
   },
   {
-    id: 6,
-    title: "Variadores de Frecuencia Industrial",
+    id: 7,
+    title: "Variadores de Frecuencia Sistemas de bombeo",
     category: "industrial",
     image: projectIndustrial2,
-    description: "Instalación y programación de VFDs en línea de producción",
+    description: "Instalación y programación de VFDs en sistema de presion constante ",
     details: [
-      "12 variadores de frecuencia ABB",
-      "Optimización de procesos de producción",
+      "1 variadores de frecuencia ABB ACS480",
+      "Optimización cambio de variador ",
       "Ahorro energético del 40%",
       "Capacitación al personal operativo"
     ]

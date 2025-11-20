@@ -27,16 +27,16 @@ const featuredProducts = [
     ]
   },
   {
-    image: "https://www.hola.com/horizon/original_aspect_ratio/8acc075d445c-iluminacion-led-12a-a.jpg",
-    title: "Kit de Iluminación LED",
+    image: "https://www.invt.com/uploads/img1/20200628/5ef7ef8e579b3.jpg",
+    title: "Variadores de Frecuencia INVT",
     discount: "15% OFF",
-    originalPrice: "$80.000",
-    discountedPrice: "$68.000",
-    description: "Iluminación eficiente y duradera para espacios comerciales.",
+    originalPrice: "$780.000",
+    discountedPrice: "$468.000",
+    description: "Unidades de control de vector de bucle abierto de la serie GD20.",
     features: [
-      "Ahorro de hasta 70% en energía",
-      "Vida útil de 50.000 horas",
-      "Colores personalizables",
+      "excelente rendimiento de accionamiento ",
+      "uso de tecnología de control vectorial ",
+      "viene de serie con reactor de CC incorporado",
       "Instalación fácil"
     ]
   },
