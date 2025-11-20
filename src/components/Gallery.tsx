@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Building2, Factory, Home, X } from "lucide-react";
+import { Building2, Factory, Home, X, Droplets } from "lucide-react"; // Agregado Droplets para el ícono de Sistema de Riego
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
@@ -12,11 +12,14 @@ import projectCommercial1 from "@/assets/jobs/20250728_085611.jpg";
 import projectCommercial2 from "@/assets/jobs/20251003_151936.jpg";
 import projectIndustrial1 from "@/assets/project-industrial-1.jpg";
 import projectIndustrial2 from "@/assets/jobs/20250916_153911.jpg";
+import projectIrrigation from "@/assets/jobs/20230813_124210.jpg";
+import projectIrrigation2 from "@/assets/jobs/20230821_085715.jpg";
+
 
 interface Project {
   id: number;
   title: string;
-  category: "residencial" | "comercial" | "industrial";
+  category: "residencial" | "comercial" | "industrial" | "Sistema de Riego";
   image: string;
   description: string;
   details: string[];
@@ -113,6 +116,35 @@ const projects: Project[] = [
       "Ahorro energético del 40%",
       "Capacitación al personal operativo"
     ]
+  },
+ 
+  {
+    id: 8,
+    title: "Sistema de Riego Automatizado",
+    category: "Sistema de Riego",
+    image: projectIrrigation,
+    description: "Instalación completa de sistema de riego inteligente para jardines y cultivos",
+    details: [
+      "Controladores de riego programables",
+      "Sensores de humedad del suelo",
+      "Aspersores y emisores eficientes",
+      "Integración con app móvil para monitoreo",
+      "Ahorro de agua del 30%"
+    ]
+  },
+    {
+    id: 9,
+    title: "Controlador de Riego Inteligente",
+    category: "Sistema de Riego",
+    image: projectIrrigation2,
+    description: "Controlador avanzado para sistemas de riego automatizados",
+    details: [
+      "Controladores de riego programables",
+      "Sensores de humedad del suelo",
+      "Aspersores y emisores eficientes",
+      "Integración con app móvil para monitoreo",
+      "Ahorro de agua del 30%"
+    ]
   }
 ];
 
@@ -120,7 +152,8 @@ const categories = [
   { id: "todos", label: "Todos", icon: null },
   { id: "residencial", label: "Residencial", icon: Home },
   { id: "comercial", label: "Comercial", icon: Building2 },
-  { id: "industrial", label: "Industrial", icon: Factory }
+  { id: "industrial", label: "Industrial", icon: Factory },
+  { id: "Sistema de Riego", label: "Sistema de Riego", icon: Droplets } // Cambiado el ícono a Droplets
 ];
 
 const Gallery = () => {
