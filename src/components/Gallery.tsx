@@ -169,13 +169,13 @@ const projects: Project[] = [
   // ============================== //
   {
     id: 10,
-    title: "Instalación Eléctrica Embarcación",
+    title: "Panel Electrico de control",
     category: "marinos",
     image: marino1,
-    description: "Sistema eléctrico completo para embarcación.",
+    description: "Sistema eléctrico Grupo Electrogeno.",
     details: [
-      "Tablero naval",
-      "Luces náuticas",
+      "Tablero Sincronismo",
+      "Control Automatico",
       "Red 12/24V",
       "Protecciones marinas"
     ]
