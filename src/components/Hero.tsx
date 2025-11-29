@@ -6,7 +6,9 @@ import Autoplay from "embla-carousel-autoplay";
 import banner1 from "@/assets/banner-1.jpg";
 import banner2 from "@/assets/banner-2.jpg";
 import banner3 from "@/assets/banner-3.jpg";
+import banner4 from "@/assets/banner-4.jpg"; // Placeholder para la imagen de seguridad eléctrica - reemplaza con tu archivo
 import logo from "@/assets/logo.png";
+
 const Hero = () => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -45,6 +47,11 @@ const Hero = () => {
       image: banner3,
       title: "Distribuidor Autorizado Smartgen Energy",
       subtitle: "Climatización, monitoreo y control inteligente para reducir costos"
+    },
+    {
+      image: banner4, // Nuevo banner: Asigna tu imagen aquí
+      title: "Seguridad Eléctrica Integral",
+      subtitle: "Protecciones avanzadas y normas de seguridad para prevenir riesgos y garantizar cumplimiento"
     }
   ];
 
@@ -58,7 +65,7 @@ const Hero = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 5000,
+            delay: 8000,
           }),
         ]}
         className="w-full min-h-screen"
@@ -79,19 +86,13 @@ const Hero = () => {
                 <div className="container mx-auto px-4 py-20 relative z-10">
                   <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
 
-               
-<div className="flex justify-center mb-6">
-  <img
-    src={logo}
-    alt="Dreamy Escapes Cartagena"
-    className="w-48 md:w-64 lg:w-72 drop-shadow-xl transition-transform duration-500 hover:scale-105 animate-fade-in"
-  />
-</div>
-
-
-
-
-
+                    <div className="flex justify-center mb-6">
+                      <img
+                        src={logo}
+                        alt="Dreamy Escapes Cartagena" // Nota: Cambia el alt si es necesario para REDCONTROL
+                        className="w-48 md:w-64 lg:w-72 drop-shadow-xl transition-transform duration-500 hover:scale-105 animate-fade-in"
+                      />
+                    </div>
 
                     <div className="space-y-4">
                       <h2 className="text-2xl md:text-4xl font-bold text-foreground">
