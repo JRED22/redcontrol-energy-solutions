@@ -9,6 +9,28 @@ const corsHeaders = {
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
 
+// Simple in-memory rate limiting (resets on function cold start)
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT = 5; // Max requests per window
+const RATE_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+const checkRateLimit = (ip: string): boolean => {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+  
+  if (!record || now > record.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_WINDOW_MS });
+    return true;
+  }
+  
+  if (record.count >= RATE_LIMIT) {
+    return false;
+  }
+  
+  record.count++;
+  return true;
+};
+
 // HTML escaping function to prevent XSS
 const escapeHtml = (str: string): string => {
   const htmlEscapeMap: Record<string, string> = {
@@ -35,7 +57,9 @@ const contactSchema = z.object({
   message: z.string()
     .trim()
     .min(10, 'Message must be at least 10 characters')
-    .max(2000, 'Message must be less than 2000 characters')
+    .max(2000, 'Message must be less than 2000 characters'),
+  // Honeypot field - should always be empty
+  website: z.string().max(0, 'Bot detected').optional()
 });
 
 const handler = async (req: Request): Promise<Response> => {
@@ -45,7 +69,33 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
+    // Rate limiting check
+    const clientIp = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || 
+                     req.headers.get("cf-connecting-ip") || 
+                     "unknown";
+    
+    if (!checkRateLimit(clientIp)) {
+      console.log("Rate limit exceeded for IP");
+      return new Response(
+        JSON.stringify({ error: "Too many requests. Please try again later." }),
+        {
+          status: 429,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+
     const body = await req.json();
+
+    // Honeypot check - if website field has value, it's a bot
+    if (body.website) {
+      console.log("Honeypot triggered - bot detected");
+      // Return success to not alert the bot
+      return new Response(JSON.stringify({ success: true }), {
+        status: 200,
+        headers: { "Content-Type": "application/json", ...corsHeaders },
+      });
+    }
 
     // Validate input with Zod schema
     const validation = contactSchema.safeParse(body);
