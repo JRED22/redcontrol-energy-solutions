@@ -13,7 +13,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
+    website: "" // Honeypot field
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -47,7 +48,8 @@ const Contact = () => {
         body: {
           name: formData.name.trim(),
           email: formData.email.trim(),
-          message: formData.message.trim()
+          message: formData.message.trim(),
+          website: formData.website // Honeypot
         }
       });
 
@@ -58,7 +60,7 @@ const Contact = () => {
         description: "Hemos recibido tu mensaje. Te contactaremos pronto.",
       });
       
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "", website: "" });
     } catch (error: any) {
       console.error("Error sending email:", error);
       toast({
@@ -145,6 +147,17 @@ const Contact = () => {
 
           <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot field - hidden from users, bots will fill it */}
+              <div className="absolute -left-[9999px]" aria-hidden="true">
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={formData.website}
+                  onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                />
+              </div>
               <div>
                 <Label htmlFor="name">Nombre</Label>
                 <Input
