@@ -152,6 +152,7 @@ const Contact = () => {
                   placeholder="Tu nombre completo"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  maxLength={100}
                   className="mt-2"
                 />
               </div>
@@ -163,6 +164,7 @@ const Contact = () => {
                   placeholder="tu@email.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  maxLength={255}
                   className="mt-2"
                 />
               </div>
@@ -174,6 +176,7 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  maxLength={2000}
                   className="mt-2"
                 />
               </div>
